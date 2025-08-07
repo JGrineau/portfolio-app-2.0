@@ -1,0 +1,23 @@
+---
+---
+
+<button
+  id="darkModeToggle"
+  class="ml-4 text-xl"
+  onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';"
+  aria-label="Toggle Dark Mode"
+>
+  Dark
+</button>
+
+<script>
+  // Apply dark mode on page load based on saved preference
+  if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+</script>
