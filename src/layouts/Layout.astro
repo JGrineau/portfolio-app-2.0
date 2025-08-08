@@ -1,6 +1,5 @@
 ---
 import Navbar from '../components/Navbar.astro';
-
 ---
 <!doctype html>
 <html  lang="en">
@@ -11,10 +10,11 @@ import Navbar from '../components/Navbar.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>JP Grineau</title>
 	</head>
-	<body class="mt-8 p-0 w-100% h-100%">
-			
-		<Navbar />
-		<slot />
+	<body class=" p-0 m-0">
+			<Navbar />
+		<main class="p-8">
+			<slot />
+		</main>
 	</body>
 </html>
 
