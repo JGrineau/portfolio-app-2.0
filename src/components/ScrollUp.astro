@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+---
+
+
+<!-- Scroll to Top Button -->
+<button
+  id="scrollToTop"
+  class="hidden fixed bottom-6 right-6 p-3 rounded-full cursor-pointer transition-opacity duration-300"
+  style="background-color: var(--link); color: var(--text);"
+  aria-label="Scroll to top"
+>
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+/>
+
+<script type="module">
+  const btn = document.getElementById('scrollToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      btn.classList.remove('hidden');
+    } else {
+      btn.classList.add('hidden');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
