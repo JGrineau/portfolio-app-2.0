@@ -1,24 +1,44 @@
 ---
+
 import Logo from '../assets/blackLogo.png';
-import WhiteLogo from '../assets/favicon.png';
-import DarkMode from './DarkMode.astro';
+import WhiteLogo from '../assets/whiteLogo.png';
+import DarkMode from '../components/DarkMode.astro';
 import '../styles/global.css';
 ---
 
-<div id="Parent" class="flex justify-between items-center text-white hover: cursor-pointer">
+
     
-    <div id="Left" class="flex justify-start items-center">
-        <a href="/" class="flex items-center p-4">
-            <img id="Logo" src={Logo.src} alt="Logo" class="h-14 w-14 mr-2 dark:hidden" />
-            <img id="WhiteLogo" src={WhiteLogo.src} alt="Logo" class="h-14 w-4 mr-2 hidden dark:block" />
-        </a>
+    <div id="Parent" class="flex justify-between items-center text-white hover: cursor-pointer p-4">
+    
+        <!-- <div id="Left" class="flex justify-start items-center ml-4">
+    
+        </div> -->
+        <a href="/" class="flex items-center p-4 relative w-14 h-14 z-">
+      <!-- Light mode logo -->
+      <img
+        id="logo-light"
+        src={Logo.src}
+        alt="Logo"
+        class="absolute top-0 left-0 w-14 h-14 block"
+      />
+      <!-- Dark mode logo -->
+      <img
+        id="logo-dark"
+        src={WhiteLogo.src}
+        alt="Logo"
+        class="absolute top-0 left-0 w-14 h-14 hidden"
+      />
+    </a>
+    
+        <nav id="Right" class="gap-4 flex justify-end items-end pr-4">
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a>
+            <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" class="bi bi-github"></a>
+    <DarkMode />
+        </nav>
+    
     </div>
-    <nav id="Right" class="space-x-4 flex justify-end items-center p-4 mr-4">
-        <a href="/">Home</a>
-        <a href="/projects">Projects</a>
-        <a href="/about">About</a>
-        <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a>
-        <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" class="bi bi-github"></a>
-<DarkMode />
-    </nav>
-</div>
+
+
