@@ -74,6 +74,7 @@
   const btn = document.getElementById('theme-toggle');
   let theme = localStorage.getItem('theme') || 'system';
   updateIcon(btn, theme);
+  applyTheme(theme);
 
   btn.addEventListener('click', () => {
     theme = getNextTheme(theme);

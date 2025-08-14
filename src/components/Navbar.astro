@@ -31,9 +31,14 @@ import '../styles/global.css';
     </a>
     
         <nav id="Right" class="gap-4 flex justify-end items-end pr-4">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
+            <a href="/" class="hidden md:inline">Home</a>
+  <a href="/projects" class="hidden md:inline">Projects</a>
+  <a href="/about" class="hidden md:inline">About</a>
+
+  <!-- Icons: visible on <md (tablet/mobile), hidden on md+ (laptop/desktop) -->
+  <a href="/" class="bi bi-house md:hidden"></a>
+  <a href="/projects" class="bi bi-clipboard md:hidden"></a>
+  <a href="/about" class="bi bi-file-person md:hidden"></a>
             <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a>
             <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" class="bi bi-github"></a>
     <DarkMode />
