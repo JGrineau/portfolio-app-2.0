@@ -1,5 +1,5 @@
 ---
-
+import { Image } from 'astro:assets';
 import Logo from '../assets/blackLogo.png';
 import WhiteLogo from '../assets/whiteLogo.png';
 import DarkMode from '../components/DarkMode.astro';
@@ -15,17 +15,19 @@ import '../styles/global.css';
         </div> -->
         <a href="/" class="flex items-center p-4 relative w-14 h-14 z-">
       <!-- Light mode logo -->
-      <img
+      <Image
         id="logo-light"
-        src={Logo.src}
+        src={Logo}
         alt="Logo"
+        loading="eager"
         class="absolute top-0 left-0 w-14 h-14 block"
       />
       <!-- Dark mode logo -->
-      <img
+      <Image
         id="logo-dark"
-        src={WhiteLogo.src}
+        src={WhiteLogo}
         alt="Logo"
+        loading="eager"
         class="absolute top-0 left-0 w-14 h-14 hidden"
       />
     </a>
@@ -39,8 +41,8 @@ import '../styles/global.css';
   <a href="/" class="bi bi-house md:hidden"></a>
   <a href="/projects" class="bi bi-clipboard md:hidden"></a>
   <a href="/about" class="bi bi-file-person md:hidden"></a>
-            <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" class="bi bi-linkedin"></a>
-            <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" class="bi bi-github"></a>
+            <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="bi bi-linkedin"></a>
+            <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" aria-label="Github profile" class="bi bi-github"></a>
     <DarkMode />
         </nav>
     
