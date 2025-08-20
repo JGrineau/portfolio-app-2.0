@@ -1,7 +1,6 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 ---
-
 
 <!-- Scroll to Top Button -->
 <button
@@ -20,17 +19,17 @@ import '../styles/global.css';
 />
 
 <script type="module">
-  const btn = document.getElementById('scrollToTop');
+  const btn = document.getElementById("scrollToTop");
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
-      btn.classList.remove('hidden');
+      btn.classList.remove("hidden");
     } else {
-      btn.classList.add('hidden');
+      btn.classList.add("hidden");
     }
   });
 
-  btn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>

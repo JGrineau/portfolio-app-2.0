@@ -1,51 +1,58 @@
 ---
-import { Image } from 'astro:assets';
-import Logo from '../assets/blackLogo.png';
-import WhiteLogo from '../assets/whiteLogo.png';
-import DarkMode from '../components/DarkMode.astro';
-import '../styles/global.css';
+import { Image } from "astro:assets";
+import Logo from "../assets/blackLogo.png";
+import WhiteLogo from "../assets/whiteLogo.png";
+import DarkMode from "../components/DarkMode.astro";
+import "../styles/global.css";
 ---
 
-
-    
-    <div id="Parent" class="flex justify-between items-center text-white hover: cursor-pointer p-4">
-    
-        <!-- <div id="Left" class="flex justify-start items-center ml-4">
+<div
+  id="Parent"
+  class="flex justify-between items-center text-white hover: cursor-pointer p-4"
+>
+  <!-- <div id="Left" class="flex justify-start items-center ml-4">
     
         </div> -->
-        <a href="/" class="flex items-center p-4 relative w-14 h-14 z-">
-      <!-- Light mode logo -->
-      <Image
-        id="logo-light"
-        src={Logo}
-        alt="Logo"
-        loading="eager"
-        class="absolute top-0 left-0 w-14 h-14 block"
-      />
-      <!-- Dark mode logo -->
-      <Image
-        id="logo-dark"
-        src={WhiteLogo}
-        alt="Logo"
-        loading="eager"
-        class="absolute top-0 left-0 w-14 h-14 hidden"
-      />
-    </a>
-    
-        <nav id="Right" class="gap-4 flex justify-end items-end pr-4">
-            <a href="/" class="hidden md:inline">Home</a>
-  <a href="/projects" class="hidden md:inline">Projects</a>
-  <a href="/about" class="hidden md:inline">About</a>
+  <a href="/" class="flex items-center p-4 relative w-14 h-14 z-">
+    <!-- Light mode logo -->
+    <Image
+      id="logo-light"
+      src={Logo}
+      alt="Logo"
+      loading="eager"
+      class="absolute top-0 left-0 w-14 h-14 block"
+    />
+    <!-- Dark mode logo -->
+    <Image
+      id="logo-dark"
+      src={WhiteLogo}
+      alt="Logo"
+      loading="eager"
+      class="absolute top-0 left-0 w-14 h-14 hidden"
+    />
+  </a>
 
-  <!-- Icons: visible on <md (tablet/mobile), hidden on md+ (laptop/desktop) -->
-  <a href="/" class="bi bi-house md:hidden"></a>
-  <a href="/projects" class="bi bi-clipboard md:hidden"></a>
-  <a href="/about" class="bi bi-file-person md:hidden"></a>
-            <a href="https://www.linkedin.com/in/jpgrineau/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="bi bi-linkedin"></a>
-            <a href="https://github.com/JGrineau" target="_blank" rel="noopener noreferrer" aria-label="Github profile" class="bi bi-github"></a>
+  <nav id="Right" class="gap-4 flex justify-end items-end pr-4">
+    <a href="/" class="hidden md:inline">Home</a>
+    <a href="/projects" class="hidden md:inline">Projects</a>
+    <a href="/about" class="hidden md:inline">About</a>
+
+    <!-- Icons: visible on <md (tablet/mobile), hidden on md+ (laptop/desktop) -->
+    <a href="/" class="bi bi-house md:hidden"></a>
+    <a href="/projects" class="bi bi-clipboard md:hidden"></a>
+    <a href="/about" class="bi bi-file-person md:hidden"></a>
+    <a
+      href="https://www.linkedin.com/in/jpgrineau/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn profile"
+      class="bi bi-linkedin"></a>
+    <a
+      href="https://github.com/JGrineau"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Github profile"
+      class="bi bi-github"></a>
     <DarkMode />
-        </nav>
-    
-    </div>
-
-
+  </nav>
+</div>

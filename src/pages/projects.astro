@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import NextLogo from "../assets/Nextjs.png";
 import TypescriptLogo from "../assets/typescript.png";
 import AstroLogo from "../assets/astrologo.png";
@@ -9,217 +9,594 @@ import JavascriptLogo from "../assets/javascript.png";
 import SanityLogo from "../assets/sanity.png";
 import TailwindLogo from "../assets/tailwind.png";
 import ReactLogo from "../assets/react.png";
-import '../styles/global.css';
-
+import "../styles/global.css";
 ---
-<Layout>
-<div class="max-w-6xl mx-auto w-full">
 
-    <div class=" text-center">
-        <h1 class="mt-5 ">Projects</h1>
+<Layout>
+  <div class="max-w-6xl mx-auto w-full">
+    <div class="text-center">
+      <h1 class="mt-5">Projects</h1>
     </div>
     <!-- Current Focus Section-->
     <div>
-        <div class="max-w-4xl mx-auto p-4">
-            <p class="mb-5 text-center text-lg italic">Projects that I have created or are maintaining</p>
-        </div>
-            <span 
-                class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
-                style="-webkit-text-stroke: 1.5px #aaa;"
+      <div class="max-w-4xl mx-auto p-4">
+        <p class="mb-5 text-center text-lg italic">
+          Projects that I have created or are maintaining
+        </p>
+      </div>
+      <span
+        class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
+        style="-webkit-text-stroke: 1.5px #aaa;"
+      >
+        Current Focus
+      </span>
+      <!-- Current Focus project div -->
+      <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+        <!-- Current Focus Card 1 -->
+        <div
+          class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+        >
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+              Visual Timers
+            </h3>
+            <div class="flex-row gap-2 mb-2">
+              <Image
+                src={NextLogo}
+                alt="Next.js Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={TypescriptLogo}
+                alt="TypeScript Logo Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={TailwindLogo}
+                alt="Tailwindcss Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+            </div>
+            <p class="text-sm mb-2 opacity-50">
+              A visual timer app that helps you manage your time effectively.
+              Built with <span class="font-large">Next.js</span> and <span
+                class="font-large">TypeScript</span
+              >. It allows you to create, edit, and delete timers with ease.
+              Stay focused and productive with Visual Timers!
+            </p>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a
+              href="https://visualtimers.net/"
+              target="_blank"
+              class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+              >Live Demo</a
             >
-            Current Focus
-            </span>
-            <!-- Current Focus project div -->
-            <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-                 <!-- Current Focus Card 1 -->
-  <div class="flex flex-col justify-between w-72 p-5 rounded-lg  bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition">
-      <div>
-        <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">Visual Timers</h3>
-        <div class="flex-row gap-2 mb-2">
-          <Image src={NextLogo} alt="Next.js Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={TypescriptLogo} alt="TypeScript Logo Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={TailwindLogo} alt="Tailwindcss Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-
+            <a
+              href="https://github.com/JGrineau/visual-timers"
+              aria-label="Visual Timers GitHub Repository"
+              target="_blank"
+              class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
         </div>
-        <p class="text-sm mb-2 opacity-50">
-        A visual timer app that helps you manage your time effectively.
-        Built with <span class="font-large">Next.js</span> and <span class="font-large">TypeScript</span>.
-        It allows you to create, edit, and delete timers with ease. Stay focused and productive with Visual Timers!
-      </p>
-      </div>
-      <div class="flex gap-2 mt-4">
-        <a href="https://visualtimers.net/" target="_blank" class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]">Live Demo</a>
-        <a href="https://github.com/JGrineau/visual-timers" aria-label="Visual Timers GitHub Repository" target="_blank" class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-  </div>
 
-  <!-- Current Focus Card 2 -->
-   <div class="flex flex-col justify-between w-72 p-5 rounded-lg  bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition">
-      <div>
-        <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">Personal Portfolio</h3>
-        <div class="flex-row gap-2 mb-2">
-          <Image src={AstroLogo} alt="Astro Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={JavascriptLogo} alt="JavaScript Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={TailwindLogo} alt="Tailwindcss Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={SanityLogo} alt="Sanity Logo" loading="eager" class="w-16 h-8 inline-block mr-2" />
+        <!-- Current Focus Card 2 -->
+        <div
+          class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+        >
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+              Personal Portfolio
+            </h3>
+            <div class="flex-row gap-2 mb-2">
+              <Image
+                src={AstroLogo}
+                alt="Astro Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={JavascriptLogo}
+                alt="JavaScript Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={TailwindLogo}
+                alt="Tailwindcss Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={SanityLogo}
+                alt="Sanity Logo"
+                loading="eager"
+                class="w-16 h-8 inline-block mr-2"
+              />
+            </div>
+            <p class="text-sm mb-2 opacity-50">
+              Redesigned my personal portfolio using
+              <span class="font-large">Astro</span> and <span class="font-large"
+                >JavaScript</span
+              >. Focused on performance and accessibility with a mobile-first
+              approach and 100% SEO.
+            </p>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a
+              href="https://jpgrineau.com/"
+              target="_blank"
+              class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/JGrineau/portfolio-app-2.0"
+              aria-label="Visual Timers GitHub Repository"
+              target="_blank"
+              class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
         </div>
-        <p class="text-sm mb-2 opacity-50">
-        Redesigned my personal portfolio using 
-        <span class="font-large">Astro</span> and <span class="font-large">JavaScript</span>.
-        Focused on performance and accessibility with a mobile-first approach and 100% SEO.
-      </p>
-      </div>
-      <div class="flex gap-2 mt-4">
-        <a href="https://jpgrineau.com/" target="_blank" class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]">Live Demo</a>
-        <a href="https://github.com/JGrineau/portfolio-app-2.0" aria-label="Visual Timers GitHub Repository" target="_blank" class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-  </div>
-
-        
-         
-
       </div>
       <!-- Web Apps section -->
-    <div>
-      <span
-                  class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
-                  style="-webkit-text-stroke: 1.5px #aaa;"
-              >
-              Web Apps
-              </span>
-
-              
-              <!-- Web App project div -->
-              <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-                <!-- Web Apps Card 1-->
-                 <div class="flex flex-col justify-between w-72 p-5 rounded-lg  bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition">
       <div>
-        <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">Pokémon API App</h3>
-        <div class="flex-row gap-2 mb-2">
-          <Image src={ReactLogo} alt="Astro Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={JavascriptLogo} alt="JavaScript Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={TailwindLogo} alt="Tailwindcss Logo" loading="eager" class="w-8 h-8 inline-block mr-2" />
-          <Image src={SanityLogo} alt="Sanity Logo" loading="eager" class="w-16 h-8 inline-block mr-2" />
-        </div>
-        <p class="text-sm mb-2 opacity-50">
-        Redesigned my personal portfolio using 
-        <span class="font-large">Astro</span> and <span class="font-large">JavaScript</span>.
-        Focused on performance and accessibility with a mobile-first approach and 100% SEO.
-      </p>
-      </div>
-      <div class="flex gap-2 mt-4">
-        <a href="https://jpgrineau.com/" target="_blank" class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]">Live Demo</a>
-        <a href="https://github.com/JGrineau/portfolio-app-2.0" aria-label="Visual Timers GitHub Repository" target="_blank" class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-  </div>
-                
-                  <!-- Web Apps Card 2-->
-                 <a 
-                    href="#"
-                    class="flex items-center flex-1 min-w-[280px] max-w-sm p-4 rounded-lg  hover:bg-[rgba(170,170,170,0.10)]  transition-colors"
-                  >
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                    <div class="flex-auto">
-                      <div class="text-lg font-semibold">Second</div>
-                      <div class="text-sm opacity-50">Short description of the second project</div>
-                    </div>
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                  </a>
-                
-                  <!-- Web Apps Card 3-->
-                 <a 
-                    href="#"
-                    class="flex items-center flex-1 min-w-[280px] max-w-sm p-4 rounded-lg  hover:bg-[rgba(170,170,170,0.10)]  transition-colors"
-                  >
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                    <div class="flex-auto">
-                      <div class="text-lg font-semibold">Second</div>
-                      <div class="text-sm opacity-50">Short description of the second project</div>
-                    </div>
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                  </a>
-                    </div>
+        <span
+          class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
+          style="-webkit-text-stroke: 1.5px #aaa;"
+        >
+          Web Apps
+        </span>
+
+        <!-- Web App project div -->
+        <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+          <!-- Web Apps Card 1-->
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Pokémon API App
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={ReactLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
               </div>
-
-
-
-              <!-- UI/Frontend section -->
-    <div>
-      <span
-                  class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
-                  style="-webkit-text-stroke: 1.5px #aaa;"
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
               >
-              UI / Frontend
-              </span>
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
 
-              
-              <!-- Web App project div -->
-              <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-                <!-- Web Apps Card 1-->
-                 <a 
-                    href="#"
-                    class="flex items-center flex-1 min-w-[280px] max-w-sm p-4 rounded-lg  hover:bg-[rgba(170,170,170,0.10)]  transition-colors"
-                  >
-                    <div class="pr-5 text-3xl opacity-50">
-                      <img src={NextLogo.src} alt="Next.js Logo" class="w-10 h-10 inline-block mr-2" />
-                    </div>
-                    <div class="flex-auto">
-                      <div class="text-lg font-semibold">Second</div>
-                      <div class="text-sm opacity-50">Short description of the second project</div>
-                    </div>
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                  </a>
-                
-                  <!-- Web Apps Card 2-->
-                 <a 
-                    href="#"
-                    class="flex items-center flex-1 min-w-[280px] max-w-sm p-4 rounded-lg  hover:bg-[rgba(170,170,170,0.10)]  transition-colors"
-                  >
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                    <div class="flex-auto">
-                      <div class="text-lg font-semibold">Second</div>
-                      <div class="text-sm opacity-50">Short description of the second project</div>
-                    </div>
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                  </a>
-                
-                  <!-- Web Apps Card 3-->
-                 <a 
-                    href="#"
-                    class="flex items-center flex-1 min-w-[280px] max-w-sm p-4 rounded-lg  hover:bg-[rgba(170,170,170,0.10)]  transition-colors"
-                  >
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                    <div class="flex-auto">
-                      <div class="text-lg font-semibold">Second</div>
-                      <div class="text-sm opacity-50">Short description of the second project</div>
-                    </div>
-                    <div class="pr-5 text-3xl opacity-50">
-                      🚀
-                    </div>
-                  </a>
-                    </div>
+          <!-- Web Apps Card 2-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Pokémon API App
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={ReactLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
               </div>
-</div>
-</Layout>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Web Apps Card 3-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Personal Portfolio
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={AstroLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
+              </div>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Web Apps Card 4-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Personal Portfolio
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={AstroLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+               <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
+              </div>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/Frontend section -->
+      <div>
+        <span
+          class="block mx-auto text-[5em] font-bold leading-[1em] text-transparent opacity-35 dark:opacity-20 pointer-events-none"
+          style="-webkit-text-stroke: 1.5px #aaa;"
+        >
+          UI / Frontend
+        </span>
+
+        <!-- Frontend project div -->
+        <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+          <!-- Frontend Card 1-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Personal Portfolio
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={AstroLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
+              </div>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Frontend Card 2-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Personal Portfolio
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={AstroLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
+              </div>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Frontend Card 3-->
+
+          <div
+            class="flex flex-col justify-between w-72 p-5 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          >
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-[var(--link)]">
+                Personal Portfolio
+              </h3>
+              <div class="flex-row gap-2 mb-2">
+                <Image
+                  src={AstroLogo}
+                  alt="Astro Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={JavascriptLogo}
+                  alt="JavaScript Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={TailwindLogo}
+                  alt="Tailwindcss Logo"
+                  loading="eager"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={SanityLogo}
+                  alt="Sanity Logo"
+                  loading="eager"
+                  class="w-16 h-8 inline-block mr-2"
+                />
+              </div>
+              <p class="text-sm mb-2 opacity-50">
+                Redesigned my personal portfolio using
+                <span class="font-large">Astro</span> and <span
+                  class="font-large">JavaScript</span
+                >. Focused on performance and accessibility with a mobile-first
+                approach and 100% SEO.
+              </p>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <a
+                href="https://jpgrineau.com/"
+                target="_blank"
+                class="flex-1 text-center px-3 py-2 rounded-md border text-[var(--text)] hover:opacity-80 transition hover:bg-[var(--link)]"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/JGrineau/portfolio-app-2.0"
+                aria-label="Visual Timers GitHub Repository"
+                target="_blank"
+                class="px-3 py-2 rounded-md border border-[var(--link)] text-[var(--link)] hover:bg-[var(--link)] hover:text-[var(--bg)] transition"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></Layout
+>
