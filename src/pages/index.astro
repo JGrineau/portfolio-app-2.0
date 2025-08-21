@@ -5,8 +5,8 @@ import "../styles/global.css";
 
 import { Image } from "astro:assets";
 import SutherlandLogo from "../assets/sutherland.png";
-import ESPNLogo from "../assets/ESPN.png";
-import TimersLogo from "../assets/timer.png";
+import ESPNLogo from "../assets/espn.png";
+import TimersLogo from "../assets/visualtimer.png";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -24,35 +24,35 @@ import TimersLogo from "../assets/timer.png";
         intuitive, scalable, and user-focused web applications.
       </p>
       <br />
-      <p class="flex items-center">
+      <p class="flex items-center mb-1.5">
         Working at
         <a
           href="https://www.sutherlandglobal.com/"
           target="_blank"
           rel="noopener"
-          class="flex flex-row items-center justify-between w-32 h-8 p-2 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          class="flex flex-row items-center justify-between w-32 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
         >
           <img
             src={SutherlandLogo.src}
             alt="Sutherland Logo"
-            class="inline-block w-6 h-6 mr-2"
+            class="inline-block w-8 h-8 mr-2"
             loading="eager"
           />
           <span>Sutherland</span>
         </a>
       </p>
-      <p class="flex items-center">
+      <p class="flex items-center mb-1.5">
         Core Team Of
         <a
           href="https://www.espn.com/"
           target="_blank"
           rel="noopener"
-          class="flex flex-row items-center justify-between w-32 h-8 p-2 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          class="flex flex-row items-center justify-between w-24 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
         >
           <img
             src={ESPNLogo.src}
             alt="Sutherland Logo"
-            class="inline-block w-16 h-6 mr-2"
+            class="inline-block w-6 h-6 mr-2"
             loading="eager"
           />
           <span>ESPN</span>
@@ -64,12 +64,12 @@ import TimersLogo from "../assets/timer.png";
           href="https://visualtimers.net/"
           target="_blank"
           rel="noopener"
-          class="flex flex-row items-center justify-between w-36 h-8 p-2 rounded-lg bg-[var(--bg)] hover:bg-[rgba(170,170,170,0.10)] transition"
+          class="flex flex-row items-center justify-between w-38 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
         >
           <img
             src={TimersLogo.src}
             alt="Sutherland Logo"
-            class="inline-block w-6 h-6 mr-2"
+            class="inline-block w-8 h-8 mr-2"
             loading="eager"
           />
           <span>Visual Timers</span>

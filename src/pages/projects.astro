@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 import { Image } from "astro:assets";
-import NextLogo from "../assets/Nextjs.png";
+import NextLogo from "../assets/nextjs.png";
 import TypescriptLogo from "../assets/typescript.png";
 import AstroLogo from "../assets/astrologo.png";
 import JavascriptLogo from "../assets/javascript.png";
@@ -14,6 +14,7 @@ import MySQLLogo from "../assets/mysql.png";
 import ReduxLogo from "../assets/redux.png";
 import HTMLLogo from "../assets/html.png";
 import CSSLogo from "../assets/css.png";
+import SVGLogo from "../assets/svg.png";
 
 import "../styles/global.css";
 ---
@@ -62,6 +63,12 @@ import "../styles/global.css";
               <Image
                 src={TailwindLogo}
                 alt="Tailwindcss Logo"
+                loading="eager"
+                class="w-8 h-8 inline-block mr-2"
+              />
+              <Image
+                src={SVGLogo}
+                alt="SVG Logo"
                 loading="eager"
                 class="w-8 h-8 inline-block mr-2"
               />
