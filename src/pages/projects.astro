@@ -1,7 +1,9 @@
 ---
+//layout import
 import Layout from "../layouts/Layout.astro";
-
+// Styles import
 import { Image } from "astro:assets";
+// Assets import
 import NextLogo from "../assets/nextjs.png";
 import TypescriptLogo from "../assets/typescript.png";
 import AstroLogo from "../assets/astrologo.png";
@@ -212,6 +214,13 @@ import "../styles/global.css";
                   src={ReduxLogo}
                   alt="Redux Logo"
                   title={"Redux"}
+                  loading="lazy"
+                  class="w-8 h-8 inline-block mr-2"
+                />
+                <Image
+                  src={MySQLLogo}
+                  alt="Redux Logo"
+                  title={"MySQL"}
                   loading="lazy"
                   class="w-8 h-8 inline-block mr-2"
                 />

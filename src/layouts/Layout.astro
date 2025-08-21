@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import ScrollUp from "../components/ScrollUp.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -19,8 +20,11 @@ import ScrollUp from "../components/ScrollUp.astro";
   <body class="p-0 m-0">
     <ScrollUp />
     <Navbar />
+
     <main class="p-8">
       <slot />
+      <br />
+      <Footer />
     </main>
   </body>
 </html>

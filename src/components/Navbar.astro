@@ -6,35 +6,39 @@ import DarkMode from "../components/DarkMode.astro";
 import "../styles/global.css";
 ---
 
-<div
-  id="Parent"
-  class="flex justify-between items-center text-white hover:cursor-pointer p-4"
->
-  <a href="/" class="flex items-center p-4 relative w-14 h-14">
-    <!-- Light mode logo -->
-    <Image
-      id="logo-light"
-      src={Logo}
-      alt="Logo"
-      loading="eager"
-      class="absolute top-0 left-0 w-14 h-14 block"
-    />
-    <!-- Dark mode logo -->
-    <Image
-      id="logo-dark"
-      src={WhiteLogo}
-      alt="Logo"
-      loading="eager"
-      class="absolute top-0 left-0 w-14 h-14 hidden"
-    />
-  </a>
+<div class="flex items-center justify-between p-4 bg-[var(--bg)]">
+  <!-- Sticky logo container on large and medium screens -->
+  <div>
+    <a
+      href="/"
+      class="flex sm:fixed sm:top-0 sm:left-0 sm:z-50 w-14 h-14 m-0 sm:m-2.5"
+      id="Logo"
+    >
+      <Image
+        id="logo-light"
+        src={Logo}
+        alt="Logo"
+        loading="eager"
+        class="w-14 h-14 block"
+      />
+      <Image
+        id="logo-dark"
+        src={WhiteLogo}
+        alt="Logo"
+        loading="eager"
+        class="w-14 h-14 hidden"
+      />
+    </a>
+  </div>
 
-  <nav id="Right" class="gap-4 flex justify-end items-end pr-4">
+  <!-- Nav stays on the right -->
+  <nav id="Right" class="flex-1 flex justify-end items-end gap-4 pr-4 p-2">
+    <!--Large Screen Nav -->
     <a href="/" class="hidden md:inline">Home</a>
     <a href="/projects" class="hidden md:inline">Projects</a>
     <a href="/about" class="hidden md:inline">About</a>
 
-    <!-- Icons: visible on <md (tablet/mobile), hidden on md+ (laptop/desktop) -->
+    <!-- Icons for small screens -->
     <a href="/" class="bi bi-house md:hidden"></a>
     <a href="/projects" class="bi bi-clipboard md:hidden"></a>
     <a href="/about" class="bi bi-file-person md:hidden"></a>
