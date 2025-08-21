@@ -3,6 +3,14 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 
+import { Image } from "astro:assets";
+import SutherlandLogo from "../assets/sutherland.png";
+import ESPNLogo from "../assets/espn.png";
+import TimersLogo from "../assets/visualtimer.png";
+import GithubLogo from "../assets/github.png";
+import LinkedInLogo from "../assets/linkedin.png";
+import YouTubeLogo from "../assets/youtube.png";
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -15,59 +23,136 @@ import "../styles/global.css";
       <h1>JP Grineau</h1>
       <br />
       <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+        Hey, I’m JP Grineau a full-stack developer passionate about building
+        intuitive, scalable, and user-focused web applications.
+      </p>
+      <br />
+      <p class="flex items-center mb-1.5">
+        Working at
+        <a
+          href="https://www.sutherlandglobal.com/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-32 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={SutherlandLogo}
+            alt="Sutherland Logo"
+            class="inline-block w-8 h-8 mr-2"
+            loading="eager"
+          />
+          <span>Sutherland</span>
+        </a>
+      </p>
+      <p class="flex items-center mb-1.5">
+        Core Team Of
+        <a
+          href="https://www.espn.com/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-24 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={ESPNLogo}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="eager"
+          />
+          <span>ESPN</span>
+        </a>
+      </p>
+      <p class="flex items-center">
+        Maintaining
+        <a
+          href="https://visualtimers.net/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-38 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={TimersLogo}
+            alt="Visual Timers Logo"
+            class="inline-block w-8 h-8 mr-2"
+            loading="eager"
+          />
+          <span>Visual Timers</span>
+        </a>
       </p>
       <br />
       <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+        I work with React, Node.js, Astro, and TypeScript, crafting everything
+        from dynamic frontends to robust backends. I enjoy solving complex
+        problems and turning ideas into seamless digital experiences.
       </p>
       <br />
       <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+        When I’m not coding, you’ll find me exploring new technologies,
+        optimizing workflows, or experimenting with side projects like <a
+          href="https://visualtimers.net"
+          target="_blank"
+          id="home-p-link">Visual Timers.</a
+        >
       </p>
       <br />
       <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+        Currently based in London, Ontario, I thrive on continuous learning and
+        improving my craft whether that’s writing clean, maintainable code or
+        deploying projects to the cloud. Let’s build something awesome together.
       </p>
       <br />
-      <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+      <br />
+      <p class="mb-2">Find me on</p>
+      <p class="flex flex-wrap gap-2">
+        <a
+          href="https://github.com/JGrineau"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-24 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={GithubLogo}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="lazy"
+          />
+          <span>GitHub</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jpgrineau/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-28 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={LinkedInLogo}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="lazy"
+          />
+          <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://www.youtube.com/@visual-timers"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-28 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={YouTubeLogo}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="lazy"
+          />
+          <span>YouTube</span>
+        </a>
       </p>
       <br />
-      <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
-      </p>
+      <p>Or email me at jgrineau95@gmail.com</p>
       <br />
       <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
-      </p>
-      <br />
-      <p>
-        Welcome to my personal portfolio website! I'm JP Grineau, a passionate
-        developer and tech enthusiast. Here, you'll find a showcase of my
-        projects, skills, and experiences in the world of technology. Feel free
-        to explore and learn more about my journey in the tech industry.
+        This portfolio is built with Astro, showcasing my skills and projects.
+        Feel free to explore and reach out if you’d like to collaborate or just
+        chat about tech!
       </p>
     </div>
   </div>
