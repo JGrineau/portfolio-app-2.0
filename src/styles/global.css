@@ -43,6 +43,7 @@ a:hover {
 #home-p-link {
   color: white;
   text-decoration: underline;
+  text-underline-offset: 4px;
   text-decoration-color: var(--link);
   text-decoration-thickness: 1px;
   transition: opacity 0.2s ease;

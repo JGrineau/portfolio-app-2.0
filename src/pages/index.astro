@@ -1,8 +1,8 @@
 ---
-// import Welcome from '../components/Welcome.astro';
+//layout import
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-
+// Assets import
 import { Image } from "astro:assets";
 import SutherlandLogo from "../assets/sutherland.png";
 import ESPNLogo from "../assets/espn.png";
@@ -10,9 +10,6 @@ import TimersLogo from "../assets/visualtimer.png";
 import GithubLogo from "../assets/github.png";
 import LinkedInLogo from "../assets/linkedin.png";
 import YouTubeLogo from "../assets/youtube.png";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -90,8 +87,8 @@ import YouTubeLogo from "../assets/youtube.png";
         optimizing workflows, or experimenting with side projects like <a
           href="https://visualtimers.net"
           target="_blank"
-          id="home-p-link">Visual Timers.</a
-        >
+          id="home-p-link">Visual Timers</a
+        >.
       </p>
       <br />
       <p>
@@ -150,9 +147,12 @@ import YouTubeLogo from "../assets/youtube.png";
       <p>Or email me at jgrineau95@gmail.com</p>
       <br />
       <p>
-        This portfolio is built with Astro, showcasing my skills and projects.
-        Feel free to explore and reach out if you’d like to collaborate or just
-        chat about tech!
+        This portfolio is built with Astro, showcasing my skills and <a
+          href="/projects"
+          target="_blank"
+          id="home-p-link">projects</a
+        >. Feel free to explore and reach out if you’d like to collaborate or
+        just chat about tech!
       </p>
     </div>
   </div>
