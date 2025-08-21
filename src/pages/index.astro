@@ -7,6 +7,9 @@ import { Image } from "astro:assets";
 import SutherlandLogo from "../assets/sutherland.png";
 import ESPNLogo from "../assets/espn.png";
 import TimersLogo from "../assets/visualtimer.png";
+import GithubLogo from "../assets/github.png";
+import LinkedInLogo from "../assets/linkedin.png";
+import YouTubeLogo from "../assets/youtube.png";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -51,7 +54,7 @@ import TimersLogo from "../assets/visualtimer.png";
         >
           <img
             src={ESPNLogo.src}
-            alt="Sutherland Logo"
+            alt="ESPN Logo"
             class="inline-block w-6 h-6 mr-2"
             loading="eager"
           />
@@ -68,7 +71,7 @@ import TimersLogo from "../assets/visualtimer.png";
         >
           <img
             src={TimersLogo.src}
-            alt="Sutherland Logo"
+            alt="Visual Timers Logo"
             class="inline-block w-8 h-8 mr-2"
             loading="eager"
           />
@@ -95,6 +98,61 @@ import TimersLogo from "../assets/visualtimer.png";
         Currently based in London, Ontario, I thrive on continuous learning and
         improving my craft whether that’s writing clean, maintainable code or
         deploying projects to the cloud. Let’s build something awesome together.
+      </p>
+      <br />
+      <br />
+      <p class="mb-2">Find me on</p>
+      <p class="flex flex-wrap gap-2">
+        <a
+          href="https://github.com/JGrineau"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-24 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <img
+            src={GithubLogo.src}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="eager"
+          />
+          <span>GitHub</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jpgrineau/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-28 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <img
+            src={LinkedInLogo.src}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="eager"
+          />
+          <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://www.youtube.com/@visual-timers"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-28 h-8 p-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <img
+            src={YouTubeLogo.src}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="eager"
+          />
+          <span>YouTube</span>
+        </a>
+      </p>
+      <br />
+      <p>Or email me at jgrineau95@gmail.com</p>
+      <br />
+      <p>
+        This portfolio is built with Astro, showcasing my skills and projects.
+        Feel free to explore and reach out if you’d like to collaborate or just
+        chat about tech!
       </p>
     </div>
   </div>
