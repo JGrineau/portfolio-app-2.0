@@ -41,7 +41,7 @@ a:hover {
   color: var(--text);
 }
 #home-p-link {
-  color: white;
+  color: #0f0f0f;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: var(--link);
@@ -50,6 +50,10 @@ a:hover {
 }
 #home-p-link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.dark #home-p-link {
+  color: #ffffff;
 }
 
 hr {
