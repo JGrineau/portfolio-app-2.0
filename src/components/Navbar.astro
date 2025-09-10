@@ -19,45 +19,52 @@ import "../styles/global.css";
         src={Logo}
         alt="Logo"
         loading="eager"
-        class="w-14 h-14 block"
+        class="w-16 h-16 block"
       />
       <Image
         id="logo-dark"
         src={WhiteLogo}
         alt="Logo"
         loading="eager"
-        class="w-14 h-14 hidden"
+        class="w-16 h-16 hidden"
       />
     </a>
   </div>
 
   <!-- Nav stays on the right -->
-  <nav id="Right" class="flex-1 flex justify-end items-end gap-4 pr-4 p-2">
+  <nav id="Right" class="flex-1 flex justify-end items-end gap-8 pr-4 p-2">
     <!--Large Screen Nav -->
     <a href="/" class="hidden md:inline">Home</a>
     <a href="/projects" class="hidden md:inline">Projects</a>
     <a href="/resume" class="hidden md:inline">Resume</a>
 
     <!-- Icons for small screens -->
-    <a href="/" class="bi bi-house md:hidden" title="Home Page"></a>
-    <a href="/projects" class="bi bi-clipboard md:hidden" title="Projects Page"
-    ></a>
-    <a href="/resume" class="bi bi-file-person md:hidden" title="Resume Page"
-    ></a>
+    <a
+      href="/"
+      class="bi bi-house md:hidden text-xl font-bold"
+      title="Home Page"></a>
+    <a
+      href="/projects"
+      class="bi bi-clipboard md:hidden text-xl font-bold"
+      title="Projects Page"></a>
+    <a
+      href="/resume"
+      class="bi bi-file-person md:hidden text-xl font-bold"
+      title="Resume Page"></a>
     <a
       href="https://www.linkedin.com/in/jpgrineau/"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="LinkedIn profile"
       title="LinkedIn Profile"
-      class="bi bi-linkedin"></a>
+      class="bi bi-linkedin text-xl font-bold"></a>
     <a
       href="https://github.com/JGrineau"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Github profile"
       title="Github Profile"
-      class="bi bi-github"></a>
+      class="bi bi-github text-xl font-bold"></a>
     <DarkMode />
   </nav>
 </div>
