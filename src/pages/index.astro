@@ -5,6 +5,7 @@ import "../styles/global.css";
 // Assets import photos and logos
 import { Image } from "astro:assets";
 import SutherlandLogo from "../assets/sutherland.png";
+import EverbridgeLogo from "../assets/everbridge.png";
 import ESPNLogo from "../assets/espn.png";
 import TimersLogo from "../assets/visualtimer.png";
 import GithubLogo from "../assets/github.png";
@@ -40,9 +41,38 @@ import YouTubeLogo from "../assets/youtube.png";
           />
           <span>Sutherland</span>
         </a>
+        <a
+          href="https://www.sutherlandglobal.com/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-34 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={EverbridgeLogo}
+            alt="Sutherland Logo"
+            class="inline-block w-8 h-8 mr-2"
+            loading="eager"
+          />
+          <span>Everbridge</span>
+        </a>
       </p>
+
       <p class="flex items-center mb-1.5">
         Core Team Of
+        <a
+          href="https://www.espn.com/"
+          target="_blank"
+          rel="noopener"
+          class="flex flex-row items-center justify-between w-24 h-8 p-2 ml-2 rounded-lg bg-[rgba(170,170,170,0.05)] hover:bg-[rgba(170,170,170,0.15)] transition"
+        >
+          <Image
+            src={ESPNLogo}
+            alt="ESPN Logo"
+            class="inline-block w-6 h-6 mr-2"
+            loading="eager"
+          />
+          <span>ESPN</span>
+        </a>
         <a
           href="https://www.espn.com/"
           target="_blank"
